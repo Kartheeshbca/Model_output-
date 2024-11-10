@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #333, #666);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+footer {
+    background: linear-gradient(to right, #333, #666);
+    color: white;
+    text-align: center;
+    padding-bottom: 21px;
+    padding-top: 15px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+header h1{
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Layout Styles */
+.main-content, .content-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 20px;
+}
+
+.main-content aside, .content-page aside {
+    flex: 1 1 25%;
+}
+
+.main-content section, .content-page section {
+    flex: 1 1 70%;
+}
+
+/* Sidebar Links */
+.sidebar-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links ul li {
+    margin-bottom: 10px;
+}
+
+/* Float Image */
+.float-image {
+    float: left;
+    margin: 0 1em 1em 0;
+    max-width: 25%;
+}
+
+.carousel img, .img-fluid, figure img {
+    width: 50%;
+    height: auto;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-content, .content-page {
+        flex-direction: column;
+    }
+}
